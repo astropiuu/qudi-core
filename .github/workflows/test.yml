@@ -4,10 +4,11 @@
 name: Testing
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  schedule:
+    - cron: '*/5 * * * *' 
+
+permissions:
+  contents: write
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -19,24 +20,18 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-package-combination:
-          - python-version: '3.8'
-            packages: 'numpy==1.24.4'
-          - python-version: '3.9'
-            packages: 'numpy==1.24.4'
-          - python-version: '3.9'
-            packages: 'numpy==2.0.0'
-          - python-version: '3.10'
-            packages: 'numpy==1.24.4'
-          - python-version: '3.10'
-            packages: 'numpy==2.0.0'
-
+        python-version: ['3.8', '3.9', '3.10']
+       
     steps:
     - uses: actions/checkout@v4
-    - name: Set up Python ${{ matrix.python-package-combination.python-version }}
+      with:
+          fetch-depth: 0
+          ref: ${{github.event.pull_request.head.ref}}
+          repository: ${{github.event.pull_request.head.repo.full_name}}
+    - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v5
       with:
-        python-version: ${{ matrix.python-package-combination.python-version }}
+        python-version: ${{ matrix.python-version }}
         cache: "pip"
         cache-dependency-path: pyproject.toml
     - name: Install dependencies
@@ -50,18 +45,47 @@ jobs:
         cd qudi-iqo-modules
         pip install -e ".[dev-test]"
         cd ../qudi-core
-    - name: Test different version of numpy
-      run: pip install  ${{  matrix.python-package-combination.packages }}
+
     - name: Test with pytest
       run: |
         pytest --ignore=tests/fit_methods -s
-    - name: Archive code coverage results
+
+    - name: Switch to test branch
+      run: |
+        git checkout workflow
+
+    - name: Pip freeze and checkout test branch
+      run: |
+        pip freeze > reqs_${{ matrix.python-version }}.txt
+        cp reqs_${{ matrix.python-version }}.txt ../
+        git checkout workflow
+
+    - name: Compare pip freeze outputs
+      if: failure()
+      run: |
+       cp ../reqs_${{ matrix.python-version }}.txt failed_reqs.txt
+       python compare_pip_freeze.py failed_reqs.txt reqs_${{ matrix.python-version }}.txt pip_freeze_diff_${{ matrix.python-version }}.txt
+
+    - name: Upload pip freeze diff
+      if: failure()
       uses: actions/upload-artifact@v4
       with:
-          name: code-coverage-report ${{ matrix.python-package-combination.python-version }} ,  ${{  matrix.python-package-combination.packages }}
-          path: coverage
-          retention-days: 5
-    - name: Download all workflow run artifacts
-      uses: actions/download-artifact@v4
+        name: pip-freeze-diff-${{ matrix.python-version }}
+        path: pip_freeze_diff_${{ matrix.python-version }}.txt
 
+
+    - name: Configure git
+      run: |
+        git config --global user.name "astropiuu"
+        git config --global user.email "mohit.shah@uni-ulm.de"
  
+    - name: Pip freeze on test success and commit latest deps
+      if: success()
+      run: |
+        cp ../reqs_${{ matrix.python-version }}.txt .
+        git add reqs_${{ matrix.python-version }}.txt
+        git commit -m "updated reqs.txt to latest successful run"
+        git pull
+        git push origin HEAD:workflow
+      env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

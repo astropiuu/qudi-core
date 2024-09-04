@@ -61,7 +61,7 @@ jupyterlab_pygments==0.3.0
 jupyterlab_server==2.27.3
 jupyterlab_widgets==3.0.13
 jupytext==1.16.4
-kiwisolver==1.4.5
+kiwisolver==1.4.6
 lmfit==1.3.2
 lxml==5.3.0
 markdown-it-py==3.0.0
@@ -78,7 +78,7 @@ nest-asyncio==1.6.0
 nidaqmx==1.0.1
 notebook==7.2.2
 notebook_shim==0.2.4
-numpy==2.1.0
+numpy==2.1.1
 overrides==7.7.0
 packaging==24.1
 pandocfilters==1.5.1
@@ -108,7 +108,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@63e04865e000ff5f403eb06c545a09a16c084d37#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@a7dc5680a07886ed393640157dc44086c934c042#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1

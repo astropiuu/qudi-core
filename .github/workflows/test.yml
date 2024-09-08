@@ -50,6 +50,10 @@ jobs:
         pip install -e ".[dev-test]"
         cd ../qudi-core
 
+    - name: Testing fails
+      run: |
+        pip install numpy=='1.24.4'
+        pip install scipy=='2.0'
     - name: Test with pytest
       run: |
         pytest --ignore=tests/fit_methods -s

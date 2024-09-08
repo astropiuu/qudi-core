@@ -90,7 +90,7 @@ parso==0.8.4
 pickleshare==0.7.5
 pillow==10.4.0
 pkgutil_resolve_name==1.3.10
-platformdirs==4.3.1
+platformdirs==4.3.2
 pluggy==1.5.0
 plumbum==1.8.3
 prometheus_client==0.20.0
@@ -115,7 +115,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@aff71050a87cbc3dd3bdd3e607f868ee807e4687#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@7bab96ffe4f398f572b6ff507fa56ca54bfb4abc#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1

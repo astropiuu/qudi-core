@@ -63,6 +63,7 @@ jobs:
         git checkout workflow
 
     - name: Pip freeze and checkout test branch
+      if: always()
       run: |
         pip freeze | Out-File -Encoding UTF8 reqs_${{ matrix.python-version }}.txt
         cp reqs_${{ matrix.python-version }}.txt ../

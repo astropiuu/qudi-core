@@ -13,8 +13,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  group: ${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   test:
@@ -23,9 +23,7 @@ jobs:
       fail-fast: false
       matrix:
         python-version: ['3.8', '3.9', '3.10']
-    concurrency:
-      group: push-${{ github.ref }}
-      cancel-in-progress: false
+
        
     steps:
     - uses: actions/checkout@v4
@@ -61,7 +59,7 @@ jobs:
 
     - name: Pip freeze and checkout test branch
       run: |
-        pip freeze > reqs_${{ matrix.python-version }}.txt
+        pip freeze | Out-File -Encoding UTF8 reqs_${{ matrix.python-version }}.txt
         cp reqs_${{ matrix.python-version }}.txt ../
         git checkout workflow
 
@@ -77,6 +75,11 @@ jobs:
       with:
         name: pip-freeze-diff-${{ matrix.python-version }}
         path: pip_freeze_diff_${{ matrix.python-version }}.txt
+
+    - name: send email in case of failure
+      if: failure()
+      run: |
+        python failure_email.py -p ${{ matrix.python-version }} -d pip_freeze_diff_${{ matrix.python-version }}.txt
 
 
     - name: Configure git

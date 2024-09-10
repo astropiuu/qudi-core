@@ -39,7 +39,7 @@ httpcore==1.0.5
 httpx==0.27.2
 idna==3.8
 importlib_metadata==8.4.0
-importlib_resources==6.4.4
+importlib_resources==6.4.5
 iniconfig==2.0.0
 ipykernel==6.29.5
 ipython==8.18.1
@@ -71,7 +71,7 @@ markdown-it-py==3.0.0
 MarkupSafe==2.1.5
 matplotlib==3.9.2
 matplotlib-inline==0.1.7
-mdit-py-plugins==0.4.1
+mdit-py-plugins==0.4.2
 mdurl==0.1.2
 mistune==3.0.2
 nbclient==0.10.0
@@ -88,7 +88,7 @@ pandocfilters==1.5.1
 parso==0.8.4
 pillow==10.4.0
 pipx==1.7.1
-platformdirs==4.2.2
+platformdirs==4.3.2
 pluggy==1.5.0
 plumbum==1.8.3
 prometheus_client==0.20.0
@@ -112,7 +112,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@9a9a0833a7b9a27fb91ec930672dee9843c8e4b6#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@a1636f15a1766f8a60025d477eecfba52697b2b8#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1

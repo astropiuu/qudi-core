@@ -108,7 +108,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@88b7c9f1e1556f428bd47c28694aaee5f58915a7#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@d6a9fb024ae58f16d46c01d450bfb28ccf3b05ec#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1
@@ -138,7 +138,7 @@ tzdata==2024.1
 tzlocal==5.2
 uncertainties==3.2.2
 uri-template==1.3.0
-urllib3==2.2.2
+urllib3==2.2.3
 wcwidth==0.2.13
 webcolors==24.8.0
 webencodings==0.5.1

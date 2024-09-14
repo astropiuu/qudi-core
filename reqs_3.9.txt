@@ -3,7 +3,7 @@ argcomplete==3.5.0
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
 arrow==1.3.0
-asteval==1.0.2
+asteval==1.0.3
 asttokens==2.4.1
 async-lru==2.0.4
 attrs==24.2.0
@@ -112,7 +112,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@916bd56ae98d62fa286156426ebf18dbbf36fe42#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@d2feed4421fce22842da482e332e25fe2a6e9d89#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1
@@ -150,4 +150,4 @@ webencodings==0.5.1
 websocket-client==1.8.0
 widgetsnbextension==4.0.13
 zaber_motion==6.6.1
-zipp==3.20.1
+zipp==3.20.2

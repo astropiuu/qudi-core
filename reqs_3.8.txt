@@ -2,7 +2,7 @@ anyio==4.4.0
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
 arrow==1.3.0
-asteval==1.0.3
+asteval==1.0.4
 asttokens==2.4.1
 async-lru==2.0.4
 attrs==24.2.0
@@ -38,7 +38,7 @@ h11==0.14.0
 hightime==0.2.2
 httpcore==1.0.5
 httpx==0.27.2
-idna==3.8
+idna==3.9
 importlib_metadata==8.5.0
 importlib_resources==6.4.5
 iniconfig==2.0.0
@@ -115,7 +115,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@a1ceb8d4040c513cc35691d64ce7520a9ed90003#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@59c13c6f37d63d4c7b2948a3b601743772dfbb2a#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1

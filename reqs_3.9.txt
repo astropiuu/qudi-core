@@ -19,7 +19,7 @@ comm==0.2.2
 contourpy==1.3.0
 coverage==7.6.1
 cycler==0.12.1
-debugpy==1.8.5
+debugpy==1.8.6
 decorator==5.1.1
 defusedxml==0.7.1
 deprecation==2.1.0
@@ -28,7 +28,7 @@ entrypoints==0.4
 exceptiongroup==1.2.2
 executing==2.1.0
 fastjsonschema==2.20.0
-fonttools==4.54.0
+fonttools==4.54.1
 fqdn==1.5.1
 fysom==2.1.6
 gitdb==4.0.11
@@ -112,7 +112,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@1f940af4871f7cbcf298d8a5953e53584aa9ce51#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@e457912e7e0fbe074b28d4f38704d48b03437593#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1

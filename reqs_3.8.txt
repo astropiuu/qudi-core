@@ -94,7 +94,7 @@ platformdirs==4.3.6
 pluggy==1.5.0
 plumbum==1.8.3
 prometheus_client==0.21.0
-prompt_toolkit==3.0.47
+prompt_toolkit==3.0.48
 psutil==6.0.0
 pure_eval==0.2.3
 pycparser==2.22
@@ -115,7 +115,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@03d592b76ca17c496046b9f36cb0f4bb0be032e1#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@fe6bab2a730ad74fdd63e62162a129743e951994#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1
@@ -123,7 +123,7 @@ requests==2.32.3
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
 rpds-py==0.20.0
-rpyc==6.0.0
+rpyc==6.0.1
 ruamel.yaml==0.18.6
 ruamel.yaml.clib==0.2.8
 scipy==1.10.1

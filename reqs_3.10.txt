@@ -34,7 +34,7 @@ gitdb==4.0.11
 GitPython==3.1.43
 h11==0.14.0
 hightime==0.2.2
-httpcore==1.0.5
+httpcore==1.0.6
 httpx==0.27.2
 idna==3.10
 iniconfig==2.0.0
@@ -108,7 +108,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@13646e8a5d1900e5970e22c8b7e17b74202fb50e#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@d5ea2bbb47b9cfe4536f2f936aa5002c9120d798#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1

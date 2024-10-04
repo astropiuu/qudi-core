@@ -112,7 +112,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@5c7799c5a4a921ae166f7b9ebd955b0d5f075ea0#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@6f36275081d83a6234b1faf0ea157f6f95fdf58e#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1
@@ -136,7 +136,7 @@ tinycss2==1.3.0
 tomli==2.0.1
 tornado==6.4.1
 traitlets==5.14.3
-types-python-dateutil==2.9.0.20240906
+types-python-dateutil==2.9.0.20241003
 typing_extensions==4.12.2
 tzdata==2024.2
 tzlocal==5.2

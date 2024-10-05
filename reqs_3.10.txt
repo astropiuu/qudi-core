@@ -102,13 +102,13 @@ python-dateutil==2.9.0.post0
 python-decouple==3.8
 python-json-logger==2.0.7
 PyVISA==1.14.1
-pywin32==306
+pywin32==307
 pywinpty==2.0.13
 PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@a458ab5064f823c8b562c4c057e56184c78f0977#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@ff25bb557d1c4eeb80722867271a54e87f3e1e56#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1

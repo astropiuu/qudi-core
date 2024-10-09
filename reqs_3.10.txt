@@ -47,7 +47,7 @@ Jinja2==3.1.4
 json5==0.9.25
 jsonpointer==3.0.0
 jsonschema==4.23.0
-jsonschema-specifications==2023.12.1
+jsonschema-specifications==2024.10.1
 jupyter==1.1.1
 jupyter-console==6.6.3
 jupyter-events==0.10.0
@@ -65,7 +65,7 @@ kiwisolver==1.4.7
 lmfit==1.3.2
 lxml==5.3.0
 markdown-it-py==3.0.0
-MarkupSafe==3.0.0
+MarkupSafe==3.0.1
 matplotlib==3.9.2
 matplotlib-inline==0.1.7
 mdit-py-plugins==0.4.2
@@ -108,7 +108,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@3165d5997ae75ea86434a44b24738aa5d63a6160#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@fd946546f713082394fd89f652f0bc34f49887c0#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1

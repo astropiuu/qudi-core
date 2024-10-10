@@ -11,12 +11,12 @@ beautifulsoup4==4.12.3
 bleach==6.1.0
 certifi==2024.8.30
 cffi==1.17.1
-charset-normalizer==3.3.2
+charset-normalizer==3.4.0
 click==8.1.7
 colorama==0.4.6
 comm==0.2.2
 contourpy==1.3.0
-coverage==7.6.1
+coverage==7.6.2
 cycler==0.12.1
 debugpy==1.8.6
 decorator==5.1.1
@@ -108,7 +108,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@fd946546f713082394fd89f652f0bc34f49887c0#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@84a21ec3b125923cb9c7be32f1bda291ba85b62d#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1

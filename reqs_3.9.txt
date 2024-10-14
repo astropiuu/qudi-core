@@ -1,4 +1,4 @@
-anyio==4.6.0
+anyio==4.6.2
 argcomplete==3.5.0
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
@@ -17,7 +17,7 @@ click==8.1.7
 colorama==0.4.6
 comm==0.2.2
 contourpy==1.3.0
-coverage==7.6.2
+coverage==7.6.3
 cycler==0.12.1
 debugpy==1.8.7
 decorator==5.1.1
@@ -97,7 +97,7 @@ psutil==6.0.0
 pure_eval==0.2.3
 pycparser==2.22
 Pygments==2.18.0
-pyparsing==3.1.4
+pyparsing==3.2.0
 pyqtgraph==0.13.7
 PySide2==5.15.2.1
 pytest==8.0.1
@@ -112,7 +112,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@f648c84f1e94b289ea9eed747deb8363e8965b5b#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@0d1fd58f1ef9306f470724dc54fdd510372652bf#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1

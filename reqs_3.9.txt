@@ -86,7 +86,7 @@ overrides==7.7.0
 packaging==24.1
 pandocfilters==1.5.1
 parso==0.8.4
-pillow==10.4.0
+pillow==11.0.0
 pipx==1.7.1
 platformdirs==4.3.6
 pluggy==1.5.0
@@ -112,7 +112,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@0afe0acb747f870defd312cbc3563c4919f13c1b#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@707fe261f5095beb0dae9c37d63112e0924ef3dd#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1
@@ -149,5 +149,5 @@ webcolors==24.8.0
 webencodings==0.5.1
 websocket-client==1.8.0
 widgetsnbextension==4.0.13
-zaber_motion==7.0.0
+zaber_motion==7.1.1
 zipp==3.20.2

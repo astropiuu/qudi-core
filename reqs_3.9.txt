@@ -1,5 +1,5 @@
 anyio==4.6.2.post1
-argcomplete==3.5.0
+argcomplete==3.5.1
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
 arrow==1.3.0
@@ -93,7 +93,7 @@ pluggy==1.5.0
 plumbum==1.9.0
 prometheus_client==0.21.0
 prompt_toolkit==3.0.48
-psutil==6.0.0
+psutil==6.1.0
 pure_eval==0.2.3
 pycparser==2.22
 Pygments==2.18.0
@@ -107,12 +107,12 @@ python-decouple==3.8
 python-json-logger==2.0.7
 PyVISA==1.14.1
 pywin32==308
-pywinpty==2.0.13
+pywinpty==2.0.14
 PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@62a3f6d494e5c068e76f3f19c5d3524b061fc197#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@9254d6783f9b464850435ea9871d00adffb48c79#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1

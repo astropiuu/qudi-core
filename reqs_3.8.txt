@@ -115,7 +115,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.0
 QtPy==2.4.1
--e git+https://github.com/astropiuu/qudi-core@0d664d7c20c4c30dc38ea33adfe57079c69a5d12#egg=qudi_core
+-e git+https://github.com/astropiuu/qudi-core@9a29aaa05f34235b704a7f4c41c85530ce2a006d#egg=qudi_core
 -e git+https://github.com/prithviulm/qudi-iqo-modules.git@0de47137e0da790642e76dfd9a47293536ab997a#egg=qudi_iqo_modules
 reactivex==4.0.4
 referencing==0.35.1
